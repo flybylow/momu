@@ -1,17 +1,25 @@
-# MoMuse Story — Export Package
+# MoMuse Story — Hackathon Win Site
 
-A visual story documenting the MoMu Fashion Hackathon 2025 win.
+A visual story documenting the MoMu Fashion Hackathon 2025 win and the creation of MoMuse.
+
+## Live Site
+
+Deployed on Vercel: [https://momu.vercel.app](https://momu.vercel.app)
 
 ## Structure
 
 ```
-momu-story-export/
-├── index.html          # Main story page (35KB)
-├── images/             # All images (18 WebP files)
+momuHackaton/
+├── index.html          # Main story page
+├── styles.css          # Stylesheet
+├── vercel.json         # Vercel deployment config
+├── images/             # All media assets
 │   ├── cover.webp
-│   ├── team.webp
-│   ├── interface.webp
-│   └── ... (15 more)
+│   ├── prizeedit.jpeg
+│   ├── coachesPan.jpg
+│   ├── 3Drec.mov
+│   ├── momuPitch.mp4
+│   └── ... (more images)
 └── README.md
 ```
 
@@ -19,11 +27,14 @@ momu-story-export/
 
 1. Open `index.html` in a browser
 2. Or serve locally: `npx serve .`
+3. Or deploy to Vercel: `vercel --prod`
 
 ## Tech Stack
 
-- Pure HTML/CSS (no JavaScript)
+- HTML/CSS
+- GSAP ScrollTrigger (for animations)
 - Inter font (Google Fonts)
+- YouTube embed (for pitch video)
 - Responsive design (mobile breakpoint at 1000px)
 
 ## Design System
@@ -39,26 +50,48 @@ momu-story-export/
 
 ## Image Treatments
 
-- `.img-bw` — Grayscale with hover-to-color transition
-- `.img-warm` — Subtle warm tone (ceremonies, team shots)
+- `.img-bw` — Grayscale by default, color on hover
+- All images use black and white treatment by default
 
 ## Sections
 
 1. Cover
-2. The End (begin at the end)
-3. Rewind (48h)
-4. Friday — The Brief
-5. The Insight (personalization concept)
-6. Saturday — The Work
-7. The Garment (Kasuri kimono)
-8. The Build (MoMuse product)
-9. Taylor Speaks (AI narrator moment)
-10. Sunday — The Moment
-11. Team
-12. What This Means (EU 2027 DPP context)
-13. Acknowledgments
-14. Closing
+2. Context (The Challenge)
+3. The End (begin at the end)
+4. Rewind (48h)
+5. Friday Evening (Bakermat)
+6. Saturday — The Brief
+7. Team
+8. The Insight (personalization concept)
+9. Saturday — The Work
+10. The Garment (Kasuri kimono)
+11. The Build (MoMuse product)
+12. Taylor Speaks (AI narrator moment)
+13. Video (YouTube pitch)
+14. Video Loop (3D model)
+15. Sunday — The Moment
+16. Team Image
+17. Acknowledgments
+18. What This Means (EU 2027 DPP context)
+19. Tabulas CTA
+20. Closing
+
+## Team
+
+- Federica Buzzi — Coordinator
+- Julie Vostalová Žil — Digitization
+- Franziska Schutz — Pattern Maker
+- Ward De Muynck — Developer
+
+## Prize
+
+**Bloomsbury Fashion Central Prize**
+
+3 months of exclusive access to:
+- Bloomsbury Digital Fashion Masterclasses
+- Bloomsbury Fashion Business Cases collection
+- Project visibility via Bloomsbury Fashion Central social media
 
 ---
 
-MoMu Fashion Hackathon 2025 · Bloomsbury Fashion Central Prize
+MoMu Fashion Hackathon 2025 · November 2025 · Antwerp, Belgium

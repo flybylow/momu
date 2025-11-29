@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="cover-image">
-            <img src="./images/cover.webp" alt="Hackathon participants">
+            <img src="./images/cover.webp" alt="Hackathon participants" class="img-bw">
         </div>
         <div class="cover-meta">
             <span>MoMu — Fashion Museum Antwerp</span>
@@ -49,7 +49,7 @@
         <div class="section-label">Begin at the End</div>
         <div class="the-end-grid">
             <div class="the-end-image">
-                <img src="./images/prize.webp" alt="Winning team" class="img-warm">
+                <img src="./images/prize.webp" alt="Winning team" class="img-bw">
             </div>
             <div class="the-end-content">
                 <h2>Garment that <span class="accent">speaks</span>.</h2>
@@ -130,7 +130,7 @@
         <div class="section-label">The Subject</div>
         <div class="garment-grid">
             <div class="garment-image">
-                <img src="./images/inspect.jpeg" alt="Kasuri garment in 3D viewer">
+                <img src="./images/inspect.jpeg" alt="Kasuri garment in 3D viewer" class="img-bw">
             </div>
             <div class="garment-content">
                 <h2>The <span class="accent">Kasuri</span> kimono.</h2>
@@ -230,7 +230,7 @@
                 </div>
             </div>
             <div class="build-image">
-                <img src="./images/Loop MoMu Café_PRESENTATION_2025 MoMu Hackaton.pptx.png" alt="MoMuse interface">
+                <img src="./images/Loop MoMu Café_PRESENTATION_2025 MoMu Hackaton.pptx.png" alt="MoMuse interface" class="img-bw">
             </div>
         </div>
     </section>
@@ -248,20 +248,20 @@
         <div class="section-label">Watch</div>
         <div class="video-grid">
             <div class="video-item">
-                <div class="video-placeholder">
-                    <!-- Replace with iframe when video ready -->
-                    <span>Pitch Video Coming Soon</span>
+                <div class="video-embed">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_5g6ZyKsg8Y?si=UcuaZw2-5puXK0Sp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <p class="video-caption">The 3-minute pitch</p>
             </div>
-            <div class="video-item">
-                <div class="video-placeholder">
-                    <!-- Replace with iframe when video ready -->
-                    <span>Demo Video Coming Soon</span>
-                </div>
-                <p class="video-caption">MoMuse in action</p>
-            </div>
         </div>
+    </section>
+
+    <!-- VIDEO LOOP -->
+    <section class="video-loop full-bleed">
+        <video autoplay muted loop playsinline>
+            <source src="./images/3Drec.mov" type="video/quicktime">
+            <source src="./images/3Drec.mov" type="video/mp4">
+        </video>
     </section>
 
     
@@ -269,8 +269,8 @@
     <section class="sunday">
         <div class="section-label">Sunday — The Moment</div>
         <div class="sunday-hero">
-            <img src="./images/present1.webp" alt="Presentation" class="img-warm">
-            <img src="./images/present2.webp" alt="Jury" class="img-warm">
+            <img src="./images/present1.webp" alt="Presentation" class="img-bw">
+            <img src="./images/present2.webp" alt="Jury" class="img-bw">
         </div>
         <div class="sunday-moment">
             <div class="sunday-moment-text">
@@ -288,7 +288,7 @@
     <!-- TEAM IMAGE -->
     <section class="team-image-section">
         <div class="team-image">
-            <img src="./images/prizepano.jpg" alt="Team MoMuse" class="img-warm">
+            <img src="./images/prizepano.jpg" alt="Team MoMuse" class="img-bw">
         </div>
     </section>
 
@@ -326,7 +326,7 @@
             </div>
         </div>
         <div class="thanks-image">
-            <img src="./images/team.webp" alt="Team MoMuse winning" class="img-warm">
+            <img src="./images/coachesPan.jpg" alt="Team MoMuse winning" class="img-bw" loading="lazy">
         </div>
     </section>
 
@@ -350,23 +350,7 @@
         </div>
     </section>
 
-    <!-- CLOSING -->
-    <section class="closing full-bleed">
-        <div class="closing-hero">
-            <div class="closing-content">
-                <h2>Craft,<br><span class="accent">Preserved.</span></h2>
-                <p>Digital Product Passports for Fashion Heritage</p>
-            </div>
-            <div class="closing-image">
-                <img src="./images/prze.jpeg" alt="Bloomsbury Fashion Central Prize" class="img-warm">
-            </div>
-        </div>
-        <div class="closing-footer">
-            <span>MoMu — Fashion Museum Antwerp</span>
-            <span>Tabulas × MoMuse</span>
-            <span>November 2025</span>
-        </div>
-    </section>
+   
 
     <!-- TABULAS CTA -->
     <section class="tabulas-cta">
@@ -378,12 +362,64 @@
         </div>
     </section>
 
+     <!-- CLOSING -->
+     <section class="closing full-bleed">
+        <div class="closing-hero">
+            <div class="closing-content">
+                <h2>Craft,<br><span class="accent">Preserved.</span></h2>
+                <p>Digital Product Passports for Fashion Heritage</p>
+            </div>
+            <div class="closing-image">
+                <img src="./images/prizeedit.jpeg" alt="Bloomsbury Fashion Central Prize" class="img-bw">
+            </div>
+        </div>
+        <div class="closing-footer">
+            <span>Tabulas × MoMu × THE DIGITAL FASHION GROUP × MoMuse Team</span>
+        </div>
+    </section>
+
     <!-- GSAP Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script>
         // Register ScrollTrigger plugin
         gsap.registerPlugin(ScrollTrigger);
+        
+        // Optimize ScrollTrigger performance
+        ScrollTrigger.config({
+            autoRefreshEvents: "visibilitychange,DOMContentLoaded,load"
+        });
+        
+        // Suppress YouTube embed player warnings (these are harmless and come from YouTube's code)
+        if (typeof console !== 'undefined') {
+            const originalWarn = console.warn;
+            const originalError = console.error;
+            
+            console.warn = function(...args) {
+                // Filter out known YouTube/third-party warnings that we can't control
+                const message = args[0];
+                if (typeof message === 'string') {
+                    if (message.includes('non-passive event listener') && 
+                        (message.includes('base.js') || message.includes('www-embed-player'))) {
+                        return; // Suppress YouTube player warnings
+                    }
+                    if (message.includes('setTimeout') && 
+                        (message.includes('www-embed-player') || message.includes('base.js'))) {
+                        return; // Suppress YouTube setTimeout warnings
+                    }
+                }
+                originalWarn.apply(console, args);
+            };
+            
+            // Also suppress setTimeout violation warnings
+            console.error = function(...args) {
+                const message = args[0];
+                if (typeof message === 'string' && message.includes("'setTimeout' handler took")) {
+                    return; // Suppress setTimeout performance warnings
+                }
+                originalError.apply(console, args);
+            };
+        }
     </script>
 
 </body>
